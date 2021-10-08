@@ -10,15 +10,36 @@
   </head>
 
   <body>
-    <div id="slides" class="carousel slide" data-ride="carousel">
-      <ul class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li>
-      </ul>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./FRIED EGG.png" alt="" />
+          <img src="./FRIED EGG.png" class="d-block w-100" alt="..." />
           <div class="carousel-caption">
             <button type="button" class="btn btn-outline-light btn-lg">
               TRY IT
@@ -26,12 +47,40 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./COFFEE.png" alt="" />
+          <img src="./COFFEE.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <button type="button" class="btn btn-outline-light btn-lg">
+              TRY IT
+            </button>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="./SAUSAGES.png" alt="" />
+          <img src="./FLOUR.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <button type="button" class="btn btn-outline-light btn-lg">
+              TRY IT
+            </button>
+          </div>
         </div>
       </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <!-- topper -->
@@ -78,6 +127,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-md-4 mt-4">
           <div class="card">
             <img
@@ -174,9 +224,8 @@
         </div>
       </div>
     </div>
-  
-  
-    <footer class="container-fluid">
+
+    <footer class="container-fluid mt-5 border-top border-dark">
       <div class="row bg-warning px-md-5 justify-content-between py-2">
         <div class="col text-nowrap">
           <a href="#"><img src="facebook-logo.png" alt="facebook logo" width="32" height="32"></a>
@@ -190,7 +239,7 @@
         </div>
       </div>
     </footer>
-  
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
