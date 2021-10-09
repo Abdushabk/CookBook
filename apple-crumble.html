@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-chloe.css">
     <title>Cook Book</title>
   </head>
 
@@ -15,18 +16,21 @@
     <div class="container">
         <div class="row">
             <div class="col my-5">
-                <h1>Apple Crumble with Cranberries</h1>
-                <p>Updated on October 11, 2021</p>
-                <h2>What a combination! This apple crumble is made with juicy pieces apples and tart cranberries surrounded by a deliciously crisp crumble made with oats and whole wheat spelt flout, raw cane sugar, maple syrup and cinnamon. It’s the perfect autumn dessert. I absolutely love this combination of flavors!</h2>
+                <h1 class="display-3">Apple Crumble with Cranberries</h1>
+                <p text-muted>Updated on October 11, 2021</p>
+                <h3>What a combination! This apple crumble is made with juicy pieces apples and tart cranberries surrounded by a deliciously crisp crumble made with oats and whole wheat spelt flout, raw cane sugar, maple syrup and cinnamon. It’s the perfect autumn dessert. I absolutely love this combination of flavors!</h2>
             </div>
-            <div class="row justify-content-between">
-                <div class="col-7">
-                    <img src="Apfel-Crumble.jpeg" alt="Picture of Apfel-Crumble" class="img-fluid">
+            <div class="row justify-content-center">
+                <div class="col-9 col-lg-6">
+                  <div class="card border-primary mb-3 overlay-container">
+                    <img src="Apfel-Crumble.jpeg" alt="Picture of Apfel-Crumble" class="img-fluid tooltip-big image" style="object-fit: cover" data-bs-toggle="tooltip" data-bs-placement="right" title="Apple Crumble";>
+                    <div class="overlay">Apple Apfel-Crumble</div>
+                  </div>
                 </div>
-                <div class="col-4">
+                <div class="col-11 col-lg-5 ms-auto">
                     <div class="row">
-                        <div class="col">
-                            <h2>Instructions</h2>
+                        <div class="col my-3">
+                            <h2 class="display-5">Instructions</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -43,13 +47,21 @@
                             <li class="list-group-item list-group-item-warning">Serve warm and enjoy!</li>
                         </ol>
                         </div>
+                        <div class="row my-3">
+                          <div class="col text-end">
+                            <button type="button" onclick="myFunction()" class="btn btn-info">share</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        
                     </div>
                 </div>
                 
             </div>
         </div>
         
-        <div class="row">
+        <div class="row mt-5">
             <div class="col">
                 <h2>Ingredients</h2>
             </div>
@@ -57,78 +69,75 @@
 
         <div class="row">
             <div class="col">
-                <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th scope="col">Type</th>
-                        <th scope="col">Column heading</th>
-                        <th scope="col">Column heading</th>
-                        <th scope="col">Column heading</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="table-active">
-                        <th scope="row">Active</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Default</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                      <tr class="table-primary">
-                        <th scope="row">Primary</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                      <tr class="table-secondary">
-                        <th scope="row">Secondary</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                      <tr class="table-success">
-                        <th scope="row">Success</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                      <tr class="table-danger">
-                        <th scope="row">Danger</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                      <tr class="table-warning">
-                        <th scope="row">Warning</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                      <tr class="table-info">
-                        <th scope="row">Info</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                      <tr class="table-light">
-                        <th scope="row">Light</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                      <tr class="table-dark">
-                        <th scope="row">Dark</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                    </tbody>
-                  </table>
+              <div class="table-responsive">
+                <table class="table table-hover my-1">
+                  <thead>
+                    <tr>
+                      <th scope="col"><h5>For the filling:</h5></th>
+                      <th scope="col"></th>
+                      <th scope="col"><h5>the base and crumble topping:</h5></th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-light">
+                      <th scope="row">peeled and finely chopped</th>
+                      <td>200g</td>
+                      <td>fine cut oats</td>
+                      <td>125g</td>
+                    </tr>
+                    <tr class="table-info">
+                      <th scope="row">fresh cranberries</th>
+                      <td>100g</td>
+                      <td>whole wheat spelt flour</td>
+                      <td>115g</td>
+                    </tr>
+                    <tr class="table-warning">
+                      <th scope="row">soft brown sugar</th>
+                      <td>80g</td>
+                      <td>salt</td>
+                      <td>1/2 teaspoon</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <th scope="row">sea salt</th>
+                      <td>1/8 teaspoon</td>
+                      <td>soft brown sugar</td>
+                      <td>60g</td>
+                    </tr>
+                    <tr class="table-success">
+                      <th scope="row">arrowroot powder</th>
+                      <td>1 tablespoon</td>
+                      <td>cinnamon</td>
+                      <td>1 teaspoon</td>
+                    </tr>
+                    <tr class="table-danger">
+                      <th scope="row">water</th>
+                      <td>2 tablespoons</td>
+                      <td>nutmeg</td>
+                      <td>1/4 teaspoon</td>
+                    </tr>
+                    <tr class="table-warning">
+                      <th scope="row">unsalted butter</th>
+                      <td>30g</td>
+                      <td>unsalted butter, melted</td>
+                      <td>85g</td>
+                    </tr>
+                    <tr class="table-info">
+                      <th scope="row">vanilla</th>
+                      <td>1/8 teaspoon</td>
+                      <td>pure maple syrup</td>
+                      <td>2 tablespoons</td>
+                    </tr>
+                    <tr class="table-secondary">
+                      <th scope="row">ground nutmeg</th>
+                      <td>pinch</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>  
+              
             </div>
         </div>
     </div>
@@ -138,7 +147,7 @@
 
 
 
-    <footer class="container-fluid">
+    <footer class="container-fluid mt-5 border-top border-dark">
       <div class="row bg-warning px-md-5 justify-content-between py-2">
         <div class="col text-nowrap">
           <a href="#"><img src="facebook-logo.png" alt="facebook logo" width="32" height="32"></a>
@@ -152,6 +161,12 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function myFunction() {
+        alert(location.hostname);
+      }
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script> 
   </body>
 </html>
