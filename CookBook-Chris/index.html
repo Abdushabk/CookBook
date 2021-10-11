@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cook Book</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/HomeMade.png" height="60px" width="60px"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item-two">
+              <a class="nav-link active" href="index.html">Home
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+           
+            <li class="nav-item-two">
+              <a class="nav-link" href="About_Us.html">About</a>
+            </li>
+            <li class="nav-item dropdown nav-item-two">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
+              <div class="dropdown-menu">
+                <form class="d-flex row">
+                  <div class="menu-margin">
+                  <input class="form-control me-sm-2" type="text" placeholder="Username">
+                  <input class="form-control me-sm-2" type="text" placeholder="Password">
+                  <button class="btn btn-secondary my-2 my-sm-0" type="submit" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" >Submit</button>
+                  </div>
+                </form>
+                
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner" >
+        <div class="carousel-item active">
+          <img src="./img/FRIED EGG.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <button type="button" class="btn btn-outline-light btn-lg">
+              TRY IT
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/COFFEE.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <button type="button" class="btn btn-outline-light btn-lg">
+              TRY IT
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/FLOUR.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <button type="button" class="btn btn-outline-light btn-lg">
+              TRY IT
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- topper -->
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">OUR FAVORIT RECIPES</h1>
+        </div>
+      </div>
+    </div>
+    <!-- the card section -->
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-md-4 mt-4">
+          <div class="card">
+            <img class="card-img-top" src="img/tartIMG_1671.jpg" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">raspberry tart</h4>
+              <p class="card-text">
+                Try our favorit raspberry tart recepie. we made it espically for
+                you ;)
+              </p>
+              <a href="./raspberry-tart.html" class="btn btn-outline-secondary"
+                >Cook it</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./img/chocolate-cookies.jpeg"
+              alt=""
+            />
+            <div class="card-body">
+              <h4 class="card-title">Chocolate cookies</h4>
+              <p class="card-text">
+                Try our favorit Chocolate cookies recepie, you'll never regret
+                it :)
+              </p>
+              <a
+                href="./chocolate-cookies.html"
+                class="btn btn-outline-secondary"
+                >Cook it</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <div class="card">
+            <img class="card-img-top" src="./img/Apfel-Crumble.jpeg" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Apfel Crumble</h4>
+              <p class="card-text">
+                Try our favorit Apfel Crumble recepie, made with love :)
+              </p>
+              <a href="./apple-crumble.html" class="btn btn-outline-secondary"
+                >Cook it</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./img/Screenshot 2021-10-10 at 20.26.05.png"
+              alt=""
+            />
+            <div class="card-body">
+              <h4 class="card-title">RAINBOW SALAD BOWL</h4>
+              <p class="card-text">
+                Try our favorit RAINBOW SALAD BOWL recepie, you'll never regret
+                it :)
+              </p>
+              <a
+                href="RAINBOW SALAD BOWL.html"
+                class="btn btn-outline-secondary"
+                >Cook it</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <div class="card">
+            <img class="card-img-top" src="img/1234.png" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Dalgona (Korean Sugar Candy)</h4>
+              <p class="card-text">
+                Korean honeycomb sugar candy that’s made with sugar and baking
+                soda.
+              </p>
+              <a
+                href="Korean honeycomb sugar candy.html"
+                class="btn btn-outline-secondary"
+                >Cook it or die</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <div class="card">
+            <img class="card-img-top" src="img/salsa.png" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Enchiladas Verdes</h4>
+              <p class="card-text">
+                Enchiladas Verdes, our favorit mexican dish :)
+              </p>
+              <a href="Salsa.html" class="btn btn-outline-secondary">Cook it</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <div class="card">
+            <img class="card-img-top" src="./img/butter-chicken-4.jpg" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Butter Chicken</h4>
+              <p class="card-text">
+                Try our favorit Butter Chicken recepie, you'll never regret it :)
+              </p>
+              <a href="Butter_Chicken.html" class="btn btn-outline-secondary">Cook it</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <div class="card">
+            <img class="card-img-top" src="./img/Turkey_Noodle_Soup.jpg" height="910px" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Turkey Noodle Soup</h4>
+              <p class="card-text">
+                Try our favorit Turkey Noodle Soup recepie, you'll never regret it :)
+              </p>
+              <a href="Turkey_Noodle_Soup.html" class="btn btn-outline-secondary">Cook it</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <div class="card">
+            <img class="card-img-top" src="./img/Vegan_Crunchwrap.jpg" height="910px" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Vegan Crunchwrap</h4>
+              <p class="card-text">
+                Try our favorit Vegan Crunchwrap recepie, you'll never regret it :)
+              </p>
+              <a href="Vegan_Crunchwraps.html" class="btn btn-outline-secondary">Cook it</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid mt-5 border-top border-dark">
+      <div class="row bg-warning px-md-5 justify-content-between py-2">
+        <div class="col text-nowrap">
+          <a href="https://www.facebook.com/"
+            ><img
+              src="img/facebook-logo.png"
+              alt="facebook logo"
+              width="32"
+              height="32"
+          /></a>
+          <a href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13560899670&extra_1=s|c|547348927123|e|instagram%27|&placement=&creative=547348927123&keyword=instagram%27&partner_id=googlesem&extra_2=campaignid%3D13560899670%26adgroupid%3D126262456694%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1321618861891%26loc_physical_ms%3D9041929%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwwY-LBhD6ARIsACvT72OC3SG3X2qAlZUlxHDhB9Q5KKcy1j0Ji-46-bJh9jGZ5olrKXNDWkkaApFsEALw_wcB"
+            ><img
+              src="img/instagram (1).png"
+              alt="instagram logo"
+              width="32"
+              height="32"
+          /></a>
+          <a href="https://twitter.com/?lang=en"
+            ><img
+              src="img/twitter (1).png"
+              alt="twitter logo"
+              width="32"
+              height="32"
+          /></a>
+          <a href="https://www.youtube.com/"
+            ><img
+              src="img/youtube.png"
+              alt="youtube logo"
+              width="32"
+              height="32"
+          /></a>
+        </div>
+        <div class="col-7 d-flex justify-content-end text-nowrap">
+          <input
+            type="email"
+            class="form-control w-25"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Email address"
+          />
+          <button type="submit" class="btn btn-primary ms-2">
+            Get a FREE e-CookBook
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
