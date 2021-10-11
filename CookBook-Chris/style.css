@@ -28,3 +28,7 @@ body {
  line-height: 150%;
 }
 
+.make-it-stick {
+  position: fixed;
+}
+
